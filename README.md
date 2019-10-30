@@ -1,4 +1,4 @@
-# Arbitrage crypto trading bot
+# Arbitrage crypto trading bot: WaveFlow + DEX
 
 Smart trading using crypto price difference on two markets: [DEX](https://dex.wavesplatform.com/) and [WaveFlow.xyz](https://waveflow.xyz/).
 
