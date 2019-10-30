@@ -8,7 +8,7 @@ Oct, 24 a new application was launched on Waves: https://www.dappocean.io/dapps/
 
 <img src="https://server.vlzhr.top/hosted/662900714-29-13.png" width="250px">
 
-So, WaveFlow pricing model has no relations to DEX which is the main Waves based exchange client. This means there could be an **arbitrage opportunity**: traders can buy crypto asset on WaveFlow for a price `P1` and sell it on DEX for a price `P2` making `P2 - P1` profit in a few seconds. Learn more about arbitrage at [Investopedia]( https://www.investopedia.com/ask/answers/what-is-arbitrage/) for a better understanding if needed.
+So, WaveFlow pricing model has no relations to DEX which is the main Waves based exchange client. That means there could be an **arbitrage opportunity**: traders can buy crypto asset on WaveFlow for a price `P1` and sell it on DEX for a price `P2` making `P2 - P1` profit in a few seconds. Learn more about arbitrage at [Investopedia]( https://www.investopedia.com/ask/answers/what-is-arbitrage/) for a better understanding if needed.
 
 This bot is made to find the arbitrage opportunities and immediately use them doing the exchange operations on [DEX](https://dex.wavesplatform.com/) and [WaveFlow](https://waveflow.xyz/). Right now bot does trading operations for a pair WAVES/BTC only. Welcome any contributions =)
 
