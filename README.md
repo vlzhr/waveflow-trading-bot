@@ -14,20 +14,20 @@ This bot is made to find the arbitrage opportunities and immediately use them do
 
 ### Arbitrage step-by-step
 
-Bot algorithm for WAVES/BTC pair arbitrage trading is the following:
+Bot algorithm for WAVES/BTC pair arbitrage trading is following:
 
-_waveflow_handler.get_optimum_amount_
+functionality of _waveflow_handler.get_optimum_amount()_:
 
 1. Getting `current_dex_price` for a pair
 2. Determining if BTC is under- or overrated on WaveFlow and storing this value to `dest`
 3. Finding the most profitable `amount` of WAVES to trade using reversed WaveFlow algorithm
 
-_bot.trade_
+functionality of _bot.trade()_
 
-4. If BTC underrated: buy BTC on WaveFlow -> sell BTC on DEX
-5. If BTC overrated: buy BTC on DEX -> sell BTC on WaveFlow
+4. If BTC underrated: buy BTC on WaveFlow spending `amount` WAVES -> sell BTC on DEX
+5. If BTC overrated: buy BTC on DEX spending `amount` WAVES -> sell BTC on WaveFlow
 
-#### Arbitrage profit counting
+### Arbitrage profit counting
 
 Assume, BTC price on WaveFlow is cheaper than the price on DEX. It will stay cheaper if we spend less than `amount` WAVES for buying BTC on WaveFlow. `amount` is determined following the reversed WaveFlow algorithm.
 
