@@ -27,6 +27,16 @@ _bot.trade_
 4. If BTC underrated: buy BTC on WaveFlow -> sell BTC on DEX
 5. If BTC overrated: buy BTC on DEX -> sell BTC on WaveFlow
 
+#### Arbitrage profit counting
+
+Assume, BTC price on WaveFlow is cheaper than the price on DEX. It will be still cheaper if we will spend less than `amount` WAVES for buying BTC on WaveFlow. `amount` is determined following the WaveFlow algorithm.
+
+We decide to sell `amount` WAVES on WaveFlow and get `amount*wf_price` BTC
+
+Now we can exchange these `amount*wf_price` BTC back to WAVES on DEX. The price for this will be `dex_price`. We will get `amount*wf_price/dex_price` WAVES from selling our BTC
+
+The final profit will be `amount*wf_price/dex_price - amount` = `amount*(wf_price/dex_price - 1)`
+
 ### Usage
 
 You will need Python to run the bot. 
