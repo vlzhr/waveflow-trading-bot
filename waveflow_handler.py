@@ -53,5 +53,6 @@ def get_optimum_amount():
             return round((a-step)*10**8)/10**8
 
 
-
+if __name__ == "__main__":
+    get_optimum_amount()
 

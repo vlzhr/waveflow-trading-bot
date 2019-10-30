@@ -150,3 +150,6 @@ def trade_overrate(amount):
     print("Exchange completed!")
 
 
+if __name__ == "__main__":
+    trade()
+
