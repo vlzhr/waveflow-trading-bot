@@ -29,7 +29,7 @@ _bot.trade_
 
 #### Arbitrage profit counting
 
-Assume, BTC price on WaveFlow is cheaper than the price on DEX. It will be still cheaper if we will spend less than `amount` WAVES for buying BTC on WaveFlow. `amount` is determined following the WaveFlow algorithm.
+Assume, BTC price on WaveFlow is cheaper than the price on DEX. It will stay cheaper if we spend less than `amount` WAVES for buying BTC on WaveFlow. `amount` is determined following the WaveFlow algorithm.
 
 We decide to sell `amount` WAVES on WaveFlow and get `amount*wf_price` BTC
 
