@@ -108,10 +108,10 @@ def trade():
 def trade_underrate(amount):
     """
     this func is called if tokenB is underrated on waveflow.xyz (i.e. BTC on waveflow is cheaper then on DEX)
-    first step: exchange <amount> WAVES to <amount*wf_price> BTC on WaveFlow
-    second step: exchange <amount*wf_price> BTC to <amount*wf_price/dex_price> WAVES on DEX
-    arbitrage profit: from <amount> WAVES to <amount*wf_price/dex_price> WAVES
-    profit = <amount * (wf_price/dex_price - 1)> WAVES
+    first step: exchange <amount> WAVES to <amount/wf_price> BTC on WaveFlow
+    second step: exchange <amount/wf_price> BTC to <amount*dex_price/wf_price> WAVES on DEX
+    arbitrage profit: from <amount> WAVES to <amount*dex_price/wf_price> WAVES
+    profit = <amount * (amount*dex_price/wf_price - 1)> WAVES
     """
 
     print("Arbitrage opportunity found! Going to buy Bitcoins by selling {} WAVES on waveflow.xyz".format(amount))
@@ -130,10 +130,10 @@ def trade_underrate(amount):
 def trade_overrate(amount):
     """
     this func is called if tokenB is overrated on waveflow.xyz (i.e. BTC on waveflow is more expensive then on DEX)
-    first step: exchange <amount> WAVES to <amount*dex_price> BTC on DEX
-    second step: exchange <amount*dex_price> BTC to <amount*dex_price/wf_price> WAVES on WaveFlow
-    arbitrage profit: from <amount> WAVES to <amount*dex_price/wf_price> WAVES
-    profit = <amount * (dex_price/wf_price - 1)> WAVES
+    first step: exchange <amount> WAVES to <amount/dex_price> BTC on DEX
+    second step: exchange <amount/dex_price> BTC to <amount*wf_price/dex_price> WAVES on WaveFlow
+    arbitrage profit: from <amount> WAVES to <amount*wf_price/dex_price> WAVES
+    profit = <amount * (wf_price/dex_price - 1)> WAVES
     """
 
     print("Arbitrage opportunity found! Going to buy Bitcoins on DEX")
