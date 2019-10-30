@@ -1,8 +1,8 @@
-# Arbitrage crypto trading bot: WaveFlow + DEX
+# Crypto trading bot: WaveFlow + DEX
 
 Smart trading using crypto price difference on two markets: [DEX](https://dex.wavesplatform.com/) and [WaveFlow.xyz](https://waveflow.xyz/).
 
-### WaveFlow exchange provides arbitrage
+### WaveFlow provides arbitrage
 
 Oct, 24 a new application was launched on Waves: https://www.dappocean.io/dapps/waveflow. This project allows crypto holders to create and use exsiting crypto pairs for trading. The price is determined in an algorithmic way: the more popular the token is, the higher its price is set. 
 
