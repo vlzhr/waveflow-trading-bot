@@ -10,7 +10,7 @@ So, WaveFlow pricing model has no relations to DEX which is the main Waves based
 
 This bot is made to find the arbitrage opportunities and immediately use them doing the exchange operations on [DEX](https://dex.wavesplatform.com/) and [WaveFlow](https://waveflow.xyz/). Right now bot does trading operations for a pair WAVES/BTC only. Welcome any contributions =)
 
-#### Arbitrage step-by-step
+### Arbitrage step-by-step
 
 Bot algorithm for WAVES/BTC pair arbitrage trading is the following:
 _waveflow_handler.get_optimum_amount_
@@ -21,10 +21,10 @@ _bot.trade_
 4. If BTC underrated: buy BTC on WaveFlow -> sell BTC on DEX
 5. If BTC overrated: buy BTC on DEX -> sell BTC on WaveFlow
 
-#### Usage
+### Usage
 
 You will need Python to run the bot. Please install `requests` and `pywaves` libraries and run `trade()` function in `bot.py`.
 
-#### Conclusion
+### Conclusion
 
 The WAVES/BTC pair is ready for the arbitrage trading. Please feel free to use this bot for "printing" money and contribute for adding new pairs like WAVES/ETH. 
