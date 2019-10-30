@@ -1,6 +1,6 @@
 # Arbitrage crypto trading bot
 
-Making money from crypto price difference on two markets: [DEX](https://dex.wavesplatform.com/) and [WaveFlow.xyz](https://waveflow.xyz/).
+Smart trading using crypto price difference on two markets: [DEX](https://dex.wavesplatform.com/) and [WaveFlow.xyz](https://waveflow.xyz/).
 
 ### WaveFlow exchange provides arbitrage
 
