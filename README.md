@@ -39,7 +39,7 @@ The final profit will be `amount*dex_price/wf_price - amount` = `amount*(dex_pri
 
 ### Usage
 
-You will need Python to run the bot. 
+You will need Python 3.4+ to run the bot. 
 
 Please install `requests` and `pywaves` libraries and run `trade()` function in `bot.py`.
 
